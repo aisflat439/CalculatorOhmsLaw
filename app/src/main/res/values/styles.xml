@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <!-- custom theme based on current to ensure loading screen is Light Blue -->
+        <item name="android:windowBackground">@color/LightBlue</item>
+
+    </style>
+
+<!--
+    <style name="SpinnerStyleBack" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerStyleBrown" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerStyleRed" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerStyleOrange" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerStyleYellow" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerStyleGreen" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SpinnerStyleBlue" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="SpinnerStyleViolet" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+   
+    <style name="SpinnerStyleGrey" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="SpinnerStyleWhite" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <style name="SpinnerStyleGold" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+   
+    <style name="SpinnerStyleSilver" >
+        <item name="android:background">#ff000000</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+-->
+
+</resources>
+

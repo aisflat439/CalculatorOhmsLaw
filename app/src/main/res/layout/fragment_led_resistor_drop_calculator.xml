@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/LightBlue"
+    tools:context="com.aisflat439gardens.calculatorohmslaw.app.MainActivity">
+
+
+    <TextView
+        android:id="@+id/led_calculator_text_view"
+        android:text="@string/led_resistor_text_view"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/voltage_source"
+        android:hint="@string/voltage_source_hint"
+        android:editable="true"
+        android:imeOptions="actionDone"
+        android:numeric="decimal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/led_calculator_text_view"/>
+
+    <EditText
+        android:id="@+id/voltage_drop"
+        android:hint="@string/voltage_drop_hint"
+        android:editable="true"
+        android:imeOptions="actionDone"
+        android:numeric="decimal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/voltage_source"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/voltage_drop"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/current_through_led_layout_container"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/current_through_led"
+                android:hint="@string/current_through_led_hint"
+                android:editable="true"
+                android:imeOptions="actionDone"
+                android:numeric="decimal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/current_through_led_layout_spinner_container"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Spinner
+                android:id="@+id/amps_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/container1"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/power_through_led_layout_container"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/resistance"
+                android:hint="@string/resistance_hint"
+                android:editable="true"
+                android:imeOptions="actionDone"
+                android:numeric="decimal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/power_through_led_layout_spinner_container"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <Spinner
+                android:id="@+id/ohms_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/power"
+        android:hint="@string/power__hint"
+        android:editable="true"
+        android:numeric="decimal"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/container2"/>
+
+
+    <LinearLayout
+        android:id="@+id/calculate_buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/power">
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button"
+            android:layout_alignEnd="@+id/power" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/output_results"
+        android:layout_below="@id/calculate_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/output_text_size"
+        />
+
+</RelativeLayout>

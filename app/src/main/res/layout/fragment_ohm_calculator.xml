@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/LightBlue"
+    tools:context="com.aisflat439gardens.calculatorohmslaw.app.MainActivity">
+
+    <EditText
+        android:id="@+id/voltage"
+        android:hint="@string/voltage_hint"
+        android:editable="true"
+        android:imeOptions="actionDone"
+        android:numeric="decimal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"/>
+
+    <EditText
+        android:id="@+id/current"
+        android:hint="@string/current_hint"
+        android:editable="true"
+        android:imeOptions="actionDone"
+        android:numeric="decimal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/voltage"/>
+
+    <EditText
+        android:id="@+id/resistance"
+        android:hint="@string/resistance_hint"
+        android:editable="true"
+        android:numeric="decimal"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/current"/>
+
+    <EditText
+        android:id="@+id/power"
+        android:hint="@string/power__hint"
+        android:editable="true"
+        android:numeric="decimal"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_below="@id/resistance"/>
+
+    <LinearLayout
+        android:id="@+id/radio_buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/power">
+
+        <RadioGroup
+            android:id="@+id/radio_buttons_ohms_grouping"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/ohms_radio_button"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ohms_radio_button"/>
+            <RadioButton
+                android:id="@+id/kilohms_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kilohms_radio_button"/>
+            <RadioButton
+                android:id="@+id/megaohms_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mega_ohms_radio_button"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_buttons_amps_grouping"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/amps_radio_button"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amps_radio_button"/>
+            <RadioButton
+                android:id="@+id/milliamps_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milli_amps_radio_button"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calculate_buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/radio_buttons_layout">
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button"
+            android:layout_alignEnd="@+id/power" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/output_results"
+        android:layout_below="@id/calculate_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/output_text_size"
+        />
+
+</RelativeLayout>

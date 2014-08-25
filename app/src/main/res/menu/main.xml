@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aisflat439gardens.calculatorohmslaw.app.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+    <item android:id="@+id/contact_developer"
+        android:title="@string/contact_developer"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

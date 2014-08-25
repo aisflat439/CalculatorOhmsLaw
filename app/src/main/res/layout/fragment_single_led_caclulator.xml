@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source_voltage_edit_text"
+        android:hint="@string/source_voltage_hint"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/diode_forward_voltage_edit_text"
+        android:hint="@string/diode_forward_voltage_hint"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/diode_forward_current_hint"
+        android:hint="@string/diode_forward_current_hint"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/calculate_buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/radio_buttons_layout">
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button"
+            android:layout_alignEnd="@+id/power" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/results"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

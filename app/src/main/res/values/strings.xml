@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ohm\'s Law Calculator</string>
+
+    <!-- Direction text views -->
+
+    <string name="directions">Enter any two known values and press "Calculate"
+        to solve for the others</string>
+    <string name="volts_explanation">Voltage(E) = Current(I) * Resistance(R)</string>
+    <string name="power_explanation">Power(watts) = Voltage(E) * Current(I)</string>
+
+    <!-- Main View hint strings and buttons -->
+
+    <string name="calculate_button">Calculate</string>
+    <string name="reset_button">Reset</string>
+    <string name="voltage_hint">Voltage</string>
+    <string name="current_hint">Current</string>
+    <string name="resistance_hint">Resistance</string>
+    <string name="power__hint">Power</string>
+    <string name="results_display">Results</string>
+
+    <!-- Radio button texts -->
+
+    <string name="amps_radio_button">amps (A)</string>
+    <string name="milli_amps_radio_button">milliamps (mA)</string>
+    <string name="kilohms_radio_button">kilohms (k/\u03A9)</string>
+    <string name="ohms_radio_button">ohms (/\u03A9)</string>
+    <string name="mega_ohms_radio_button">megaohms(m\u03A9)</string>
+
+    <!-- Action bar texts -->
+    <string name="action_settings">Settings</string>
+    <string name="contact_developer">Contact Developer</string>
+
+    <!-- Resistor Chart Text -->
+    <string name="num_resistor_text_view">Please select the number of bands</string>
+    <string name="four_band_radio">Four Band</string>
+    <string name="five_band_radio">Five Band</string>
+    <string name="six_band_radio">Six Band</string>
+    <string name="band_one">1st Band</string>
+    <string name="band_two">2nd Band</string>
+    <string name="band_three">3rd Band</string>
+    <string name="band_four">4th Band</string>
+    <string name="band_five">5th Band</string>
+    <string name="band_six">6th Band</string>
+    <string name="evaluate_button_text">Evaluate</string>
+
+    <!-- LED drop calculator Text -->
+    <string name="led_resistor_text_view">Calculate the resistor needed for a LED circuit. Enter any three known values and press "Calculate" to solve for the others</string>
+    <string name="voltage_source_hint">Voltage Source (Es)</string>
+    <string name="voltage_drop_hint">Voltage drop from LED (Eled)</string>
+    <string name="current_through_led_hint">Current (Iled)</string>
+
+    <!-- MCD to Lumens Text -->
+    <string name="mcd_lumens_explanation">This calculates the luminous flux for LEDs when the angle is known.</string>
+    <string name="mcd_to_lumens_text_view">Enter any two known values and press "Calculate" solving for the other.</string>
+    <string name="luminous_intensity_hint_text">Luminous Intensity</string>
+    <string name="beam_angle_hint_text">Beam angle</string>
+    <string name="luminous_flux_hint_text">Luminous Flux</string>
+    <string name="millicandelas">millicandelas (mcd)</string>
+    <string name="degrees">degrees</string>
+    <string name="lumens">lumens</string>
+
+    <!-- Single LED Calculator -->
+    <string name="source_voltage_hint">Source Voltage</string>
+    <string name="diode_forward_voltage_hint">Diode Forward Voltage</string>
+    <string name="diode_forward_current_hint">Diode Forward Current (mA)</string>
+
+    <!-- selectable fragments array -->
+    <string-array name="nav_drawer_items">
+
+        <item>Ohm Calculator</item>
+        <item>Resistor Selector</item>
+        <item>LED Drop Calculator</item>
+        <item>MCD to Lumens Converter (unimplemented)</item>
+        <item>555 Astable Circut Calculator (unimplemented)</item>
+        <item>LED Series Resistor Calculator (unimplemented)</item>
+        <item>Single LED Calculator</item>
+        <item>Learn about the developer</item>
+
+    </string-array>
+
+    <!-- Here are my icons for the array for the nav -->
+    <array name="nav_drawer_icons">
+
+        <item>@drawable/ic_temp1</item>
+        <item>@drawable/ic_temp2</item>
+        <item>@drawable/ic_temp3</item>
+        <item>@drawable/ic_temp4</item>
+        <item>@drawable/ic_temp4</item>
+        <item>@drawable/ic_temp4</item>
+        <item>@drawable/ic_temp4</item>
+
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string-array name="colors_array_first">
+
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>White</item>
+
+    </string-array>
+
+    <string-array name="colors_array">
+
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>White</item>
+
+    </string-array>
+
+    <string-array name="multiplier_array">
+
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Gold</item>
+        <item>Silver</item>
+
+    </string-array>
+
+    <string-array name="tolerance_array">
+
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>Gold</item>
+        <item>Silver</item>
+
+    </string-array>
+
+    <string-array name="tempco_array">
+
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Violet</item>
+
+    </string-array>
+    
+    <string-array name="amps_array">
+
+        <item>amps</item>
+        <item>milliamps</item>
+
+    </string-array>
+
+    <string-array name="ohms_array">
+
+        <item>ohms</item>
+        <item>kilohms</item>
+        <item>megaohms</item>
+
+    </string-array>
+        
+
+
+</resources>
